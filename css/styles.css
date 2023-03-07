@@ -380,7 +380,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-social-link:is(:hover, :focus, :active){
-	color: var(--pressed-state);
+	background-color: var(--pressed-state);
 }
 
 /* Customers */
