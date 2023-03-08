@@ -359,14 +359,14 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-social-icon{
-	fill:var(--primary-white)
+	fill:var(--primary-white);
+	margin-left: 12px;
+    margin-top: 12px;
 }
 
 .team-social-item{
 	width: 40px;
 	height: 40px;
-    margin-left: 12;
-    margin-top: 12;
 }
 
 .team-social-link{
