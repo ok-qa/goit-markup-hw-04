@@ -365,6 +365,8 @@ border-radius: 0px 0px 4px 4px;
 .team-social-item{
 	width: 40px;
 	height: 40px;
+    margin-left: 12;
+    margin-top: 12;
 }
 
 .team-social-link{
