@@ -262,7 +262,7 @@ img{
 	margin-right: 24px;
 }
 
-.feature-item:is(:hover, :focus, :active) {
+.feature-icon:is(:hover, :focus, :active) {
 	box-shadow:0px 2px 2px rgb(46 47 66 / 8%),
 				0px 2px 2px rgb(46 47 66 / 16%),
 				0px 2px 2px rgb(46 47 66 / 8%);
