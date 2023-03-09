@@ -262,7 +262,7 @@ img{
 	margin-right: 24px;
 }
 
-.feature-i:is(:hover, :focus, :active) {
+.feature-icon:is(:hover, :focus, :active) {
 	box-shadow:0px 2px 2px rgb(46 47 66 / 8%),
 				0px 2px 2px rgb(46 47 66 / 16%),
 				0px 2px 2px rgb(46 47 66 / 8%);
@@ -587,13 +587,12 @@ margin-bottom: 72px;
 	padding-right: 16px;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	width: 360px;
-	
+
 	border: 1px solid var(--accent-color);
 }
 
 .portfolio-item-link {
-	display:block;
+	display: block;
 }
 
 .portfolio-item-link:is(:hover, :focus, :active){
