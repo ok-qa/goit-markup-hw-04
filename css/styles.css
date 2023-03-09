@@ -184,11 +184,11 @@ p {
 .header-button:focus {
 	color: var(--primary-white);
 	background-color: var(--pressed-state);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .header-button {
-	padding: 16px 32px;
+	padding: 20px 32px;
 
   	text-align: center;
   	font-family: inherit;
@@ -200,6 +200,7 @@ p {
 	background-color: var(--primary-link-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	border: none;
 	cursor: pointer;
 }
 
@@ -260,6 +261,15 @@ img{
 .feature-item:not(:last-child){
 	margin-right: 24px;
 }
+
+.feature-i:is(:hover, :focus, :active) {
+	box-shadow:0px 2px 2px rgb(46 47 66 / 8%),
+				0px 2px 2px rgb(46 47 66 / 16%),
+				0px 2px 2px rgb(46 47 66 / 8%);
+	border-radius: 4px;
+	cursor: pointer;
+  }
+
 .feature-item{
 	width: calc((100% - 72px) / 4);
 }
@@ -356,12 +366,11 @@ border-radius: 0px 0px 4px 4px;
 	display: flex;
 	justify-content: center;
 	gap: 24px;
+	margin-top:8px;
 }
 
 .team-social-icon{
 	fill:var(--primary-white);
-	margin-left: 12px;
-    margin-top: 12px;
 }
 
 .team-social-item{
@@ -370,15 +379,13 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-social-link{
-	display: block;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
 	background-color: var(--primary-link-color);
-	margin-top:8px;
-	margin-bottom: 32px;
 }
 
 .team-social-link:is(:hover, :focus, :active){
@@ -421,14 +428,11 @@ border-radius: 0px 0px 4px 4px;
 .customer-list-item:is(:hover, :focus) {
 	border: 1px solid var(--pressed-state);
 	color: var(--pressed-state);
+	fill: var(--pressed-state);
   }
 
   .icon-company{
 	fill:var(--subtle-text);
-  }
-
-  .customers-list-item:is(:hover, :focus) .icon-company {
-	fill: currentColor;
   }
 
 /* Footer */
@@ -459,6 +463,10 @@ border-radius: 0px 0px 4px 4px;
 	line-height: calc(24/16);
 }
 
+.footer-container{
+	display: flex;
+	gap: 120px;
+}
 
 .footer-title {
 	margin-bottom: 16px;
@@ -495,9 +503,10 @@ border-radius: 0px 0px 4px 4px;
 	background-color: rgba(255, 255, 255, 0.1);
   }
 
-  .footer-social-links:is(:hover, :focus, :active) {
+  .footer-social-link:is(:hover, :focus, :active) {
   background-color: var(--success-color);
   border-radius: 50%;
+  cursor: pointer;
 }
   
 
@@ -566,8 +575,6 @@ margin-bottom: 72px;
 	width: 360px;
 	display: flex;
   	flex-wrap: wrap;
-	
-
 } 
 
 .portfolio-item:nth-last-child(-n + 3) {
@@ -581,6 +588,17 @@ margin-bottom: 72px;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	width: 360px;
-
+	
 	border: 1px solid var(--accent-color);
+}
+
+.portfolio-item-link {
+	display:block;
+}
+
+.portfolio-item-link:is(:hover, :focus, :active){
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+				0px 1px 1px rgba(46, 47, 66, 0.16),
+				0px 2px 1px rgba(46, 47, 66, 0.08);
+	cursor: pointer;
 }
