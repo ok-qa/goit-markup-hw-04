@@ -409,11 +409,11 @@ img{
 	color: var(--pressed-state);
   }
 
-  .icon-company{
+  .customer-icon{
 	fill: var(--subtle-text);
   }
 
-  .customer-item:is(:hover, :focus, active) .icon-company {
+  .customer-item:is(:hover, :focus) .customer-icon {
 	fill: currentColor;
   }
  
