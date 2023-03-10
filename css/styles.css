@@ -315,17 +315,6 @@ img{
 	background-color: var(--light-backgroung);
 }
 
-.our-team-header{
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.11;
-	text-align: center;
-	letter-spacing: 0.02em;
-	text-transform: capitalize;
-	color: var(--base-color);
-	margin-bottom: 72px;
-}
-
 .our-team-list{
 	display: flex;
 	justify-content: space-between;
@@ -336,7 +325,7 @@ img{
 	border: 1px solid var(--accent-color);
 	background-color: var(--primary-white);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+	border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list .title{
@@ -393,28 +382,18 @@ border-radius: 0px 0px 4px 4px;
 }
 
 /* Customers */
-.customers-header{
-	color: var(--base-color);
-	text-align: center;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: calc(40/36);
-	letter-spacing: 0.02em;
-	text-transform: capitalize;
-}
-
-.customer-list{
+  .customer-list{
 	display: flex;
 	gap: 24px;
 }
 
-.customer-item{
+.customer-list-item{
 	flex-basis: calc((100%-120px)/6);
   	width: 168px;
   	height: 88px;
 }
-
-.customer-list-item{
+  
+.customer-item{
 	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -422,21 +401,24 @@ border-radius: 0px 0px 4px 4px;
   	height: 100%;
   	border: 1px solid var(--subtle-text);
   	border-radius: 4px;
-  	cursor: pointer;
-}
+  	cursor: pointer;	
+  }
 
-.customer-list-item:is(:hover, :focus) {
+  .customer-item:is(:hover, :focus, :active) {
 	border: 1px solid var(--pressed-state);
 	color: var(--pressed-state);
-	fill: var(--pressed-state);
   }
 
   .icon-company{
-	fill:var(--subtle-text);
+	fill: var(--subtle-text);
   }
 
-/* Footer */
+  .customer-item:is(:hover, :focus, active) .icon-company {
+	fill: currentColor;
+  }
+ 
 
+/* Footer */
 .footer{
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -491,6 +473,11 @@ border-radius: 0px 0px 4px 4px;
 .footer-social-item{
 	width: 40px;
 	height: 40px;
+  }
+
+  .footer-social-icon{
+    width: 24px;
+    height: 24px;
   }
 
 .footer-social-link {
